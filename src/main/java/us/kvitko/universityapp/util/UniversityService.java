@@ -8,7 +8,6 @@ public class UniversityService {
 
     public static void study(Teach teach) {
         teach.giveExam();
-
     }
 
     public static void learn(Teachable teachable) {

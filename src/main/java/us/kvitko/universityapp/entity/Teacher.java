@@ -6,7 +6,6 @@ public class Teacher implements Teach {
     String student = "Bernice Smith";
     String university = "UCLA";
 
-
     @Override
     public void giveExam() {
         System.out.println("Teacher" + " " + name + " " + "is giving the exam paper to" + " " + student);
