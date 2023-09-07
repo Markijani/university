@@ -1,16 +1,14 @@
 package us.kvitko.universityapp.entity;
 
-public class University {
-    public void goLearn(PresenceUniversity presenceUniversity) {
-        presenceUniversity.goUniversity();
-    }
+public class University implements PresenceUniversity {
 
-    public void takeExam(Student student) {
-        student.takeExam();
-    }
+    String name = "UCLA";
+    String teacher = "Igasaki";
+    String student = "Bernice Smith";
 
-    public void giveExam(Teacher teacher) {
-        teacher.giveExam();
-    }
 
+   @Override
+   public void goUniversity() {
+       System.out.println("Student" + " " + student + " " + "and teacher" + " " + teacher + " " + "are at the" + " " + name);
+   }
 }

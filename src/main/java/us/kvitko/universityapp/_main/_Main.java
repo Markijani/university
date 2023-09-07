@@ -1,19 +1,21 @@
 package us.kvitko.universityapp._main;
 
+
 import us.kvitko.universityapp.entity.Student;
 import us.kvitko.universityapp.entity.Teacher;
 import us.kvitko.universityapp.entity.University;
+import us.kvitko.universityapp.util.UniversityService;
 
 public class _Main {
 
     public static void main (String[] args) {
-        Student student = new Student();
         Teacher teacher = new Teacher();
+        Student student = new Student();
         University university = new University();
-        university.goLearn(student);
-        university.goLearn(teacher);
-        university.takeExam(student);
-        university.giveExam(teacher);
+        UniversityService.study(teacher);
+        UniversityService.learn(student);
+        UniversityService.presence(university);
+
 
     }
 }

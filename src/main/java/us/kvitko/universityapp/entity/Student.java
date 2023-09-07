@@ -1,15 +1,14 @@
 package us.kvitko.universityapp.entity;
 
-public class Student implements Teachable, PresenceUniversity {
+public class Student implements Teachable {
+
+    String name = "Bernice Smith";
+    String teacher = "Igasaki";
+    String university = "UCLA";
+
 
     @Override
     public void takeExam() {
-        System.out.println("I am a student and I take an exam.");
+        System.out.println(name + " " + " is taking an exam to teacher" + " " + teacher);
     }
-
-    @Override
-    public void goUniversity() {
-        System.out.println("I am a student and I go to the university");
-    }
-
 }
