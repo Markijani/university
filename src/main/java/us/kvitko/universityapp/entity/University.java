@@ -2,7 +2,6 @@ package us.kvitko.universityapp.entity;
 
 public class University implements PresenceUniversity {
 
-
     String university;
     String teacher;
     String student;
