@@ -13,6 +13,6 @@ public class Student implements Teachable {
 
     @Override
     public void takeExam() {
-        System.out.println(student + " " + " is taking an exam to teacher" + " " + teacher);
+        System.out.println("Student" + " " + " " + student + " " + " is taking an exam to teacher" + " " + teacher);
     }
 }
