@@ -2,12 +2,18 @@ package us.kvitko.universityapp.entity;
 
 public class Teacher implements Teach {
 
-    String name = "Igasaki";
-    String student = "Bernice Smith";
-    String university = "UCLA";
+    String teacher;
+    String student;
+    String university;
+
+    public Teacher(String teacher, String student, String university) {
+        this.teacher = teacher;
+        this.student = student;
+        this.university = university;
+    }
 
     @Override
     public void giveExam() {
-        System.out.println("Teacher" + " " + name + " " + "is giving the exam paper to" + " " + student);
+        System.out.println("Teacher" + " " + teacher + " " + "is giving the exam paper to" + " " + student);
     }
 }

@@ -1,13 +1,17 @@
 package us.kvitko.universityapp.entity;
 
 public class Student implements Teachable {
-
-    String name = "Bernice Smith";
-    String teacher = "Igasaki";
-    String university = "UCLA";
+    String student;
+    String teacher;
+    String university;
+    public Student (String student, String teacher, String university) {
+        this.student = student;
+        this.teacher = teacher;
+        this.university = university;
+    }
 
     @Override
     public void takeExam() {
-        System.out.println(name + " " + " is taking an exam to teacher" + " " + teacher);
+        System.out.println(student + " " + " is taking an exam to teacher" + " " + teacher);
     }
 }
