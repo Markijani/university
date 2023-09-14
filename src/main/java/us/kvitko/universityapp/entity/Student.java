@@ -4,7 +4,8 @@ public class Student implements Teachable {
     String student;
     String teacher;
     String university;
-    public Student (String student, String teacher, String university) {
+
+    public Student(String student, String teacher, String university) {
         this.student = student;
         this.teacher = teacher;
         this.university = university;
