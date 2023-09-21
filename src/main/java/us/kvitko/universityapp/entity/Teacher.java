@@ -1,19 +1,27 @@
 package us.kvitko.universityapp.entity;
 
-public class Teacher implements Teach {
+public abstract class Teacher implements Teach {
+    private University university;
 
-    String teacher;
-    String student;
-    String university;
-
-    public Teacher(String teacher, String student, String university) {
-        this.teacher = teacher;
-        this.student = student;
-        this.university = university;
+    public Teacher () {
+        this.university = new University();
+        university.setStudent("Bernice");
+        university.setTeacher("Igasaki");
     }
+
+    public String getStudent() {
+        return university.getStudent();
+    }
+
+    public String getTeacher() {
+        return university.getTeacher();
+    }
+
 
     @Override
     public void giveExam() {
-        System.out.println("Teacher" + " " + teacher + " " + "is giving the exam paper to" + " " + student);
+        System.out.println(getStudent() + getTeacher());
     }
+
+
 }
