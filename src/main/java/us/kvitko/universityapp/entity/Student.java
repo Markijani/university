@@ -1,6 +1,6 @@
 package us.kvitko.universityapp.entity;
 
-public abstract class Student implements Teachable {
+public  class Student implements Teachable {
 
     private University university;
 
