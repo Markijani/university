@@ -1,6 +1,6 @@
 package us.kvitko.universityapp.entity;
 
-public class University implements PresenceUniversity {
+public class University {
 
     private String name;
     private String teacher;
@@ -28,11 +28,6 @@ public class University implements PresenceUniversity {
 
     public void setStudent(String student) {
         this.student = student;
-    }
-
-    @Override
-    public void goUniversity() {
-        System.out.println();
     }
 }
 

@@ -1,6 +1,6 @@
 package us.kvitko.universityapp.entity;
 
-public  class Student implements Teachable {
+public  class Student implements Teachable, PresenceUniversity {
 
     private University university;
 
@@ -21,8 +21,12 @@ public  class Student implements Teachable {
 
     @Override
     public void takeExam() {
-        System.out.println(getStudent() +  getName() );
+        System.out.println("Student" + " " + getStudent() + " " + "is taking an exam");
     }
 
+    @Override
+    public void goUniversity() {
+        System.out.println(getStudent() + " " + " is going to the" + " " + getName());
+    }
 
 }
